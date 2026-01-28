@@ -8,7 +8,7 @@ Essa solução visa percorrer o fluxo de login sem o uso de bibliotecas como sel
 
 ## Limitações
 
-- Nos testes feitos, consegui logar no site do Procon-SP na maioria das vezes. Contudo, em algumas execuções o xdotool simplesmente não digitou os valores esperados. Caso essa solução seja validada, posso aprimorá-la de forma a torná-la mais resiliente a esse tipo de bug
+- Nos testes feitos, consegui logar no site do [Procon-SP](https://fornecedor2.procon.sp.gov.br/login) na maioria das vezes. Contudo, em algumas execuções o xdotool simplesmente não digitou os valores esperados. Caso essa solução seja validada, posso aprimorá-la de forma a torná-la mais resiliente a esse tipo de bug
 - Nessa solução, uma instância do firefox é utilizada enquanto o container estiver ativo. De forma que após cada login, a sessão do Procon é encerrada. Talvez seja melhor reiniciar o firefox após cada login 🤔 
 - Ainda não implementei validações para direcionar o fluxo de login em caso de erro (como indisponibilidade, bug do xdotool ou captcha). Por isso, caso algum erro aconteça, o servidor somente retornará 500 após tentar executar todos os passos programados
 
