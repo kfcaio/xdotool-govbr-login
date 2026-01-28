@@ -1,10 +1,15 @@
 # xdotool-govbr-login
 
+<img width="2400" height="2098" alt="image" src="https://github.com/user-attachments/assets/10b69a14-a55c-4ccf-9a78-18fbaa7e215c" />
+
+
 ## Descrição
 
 A solução é composta pela função execute_actions, responsável por enviar comandos de teclado e mouse ao browser, e por um servidor netcat que escuta requisições HTTP GET enviadas à porta 3003.
 
 Essa solução visa percorrer o fluxo de login sem o uso de bibliotecas como selenium e playwright, as quais tendem a deixar rastros na forma de configurações atípicas de browser e/ou código injetado. Esses rastros podem ser utilizados pelo GOVBR para detecção do acesso como robotizado, o que impede que o login seja feito.
+
+Solução alternativa: https://github.com/JoaoSobhie/LOGINGOV.BR
 
 ## Limitações
 
